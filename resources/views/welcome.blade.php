@@ -21,13 +21,8 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right nav-pills">
-                    @if (Auth::check())
-                        <li><a href="#">Account</a></li>
-                        <li><a href="#">Logout</a></li>
-                    @else
-                        <li><a href="#login" data-toggle="modal">Login</a></li>
-                        <li><a href="#login" data-toggle="modal" id="sign">Sign Up</a></li>
-                    @endif
+                    <li><a href="#login" data-toggle="modal">Login</a></li>
+                    <li><a href="#signup" data-toggle="modal" id="sign">Sign Up</a></li>
                 </ul>
             </div>
         </nav>
@@ -76,12 +71,45 @@
                         {!! csrf_field() !!}
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                
+                                <input class="form-control" type="email" name="email" placeholder="Email">
+                                <input class="form-control" type="password" name="password" placeholder="Password">
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-success pull-left" type="submit">Login</button>
-                            <button type="submit" data-dismiss="modal" class="btn btn-default btn-danger">Signup</button>
+                            <a href="#signup" data-toggle="modal" data-dismiss="modal" class="btn btn-default btn-danger">Go To Signup</a>
+                        </div>
+                    </form>
+                </div><!-- modal-body -->
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+
+
+    <!-- Signup Modal -->
+    <div id="signup" class="modal fade signupModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                    <form  method="POST" action=""> 
+                        {!! csrf_field() !!}
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <input class="form-control" type="text" name="first_name" placeholder="First Name">
+                                <input class="form-control" type="text" name="last_name" placeholder="Last Name">
+                                <input class="form-control" type="email" name="email" placeholder="Email">
+                                <input class="form-control" type="password" name="password" placeholder="Create Password">
+                                <input class="form-control" type="password" name="password_confirm" placeholder="Confirm Password">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-success pull-left" type="submit">Signup</button>
+                            <a href="#login" data-toggle="modal" data-dismiss="modal" class="btn btn-default btn-danger">Go To Login</a>
                         </div>
                     </form>
                 </div><!-- modal-body -->
