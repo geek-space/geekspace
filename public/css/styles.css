@@ -1,0 +1,128 @@
+.logoName {
+    font-size: 2.5em;
+    text-decoration: none;
+    color: #ace894; 
+}
+
+.logoImage {
+    height: 1.5em;
+    width: 4em;
+    margin-top: -14px;
+}
+
+@media (min-width: 321px) {
+    .logoName {
+        font-size: 3.5em;
+        text-decoration: none;
+        color: #ace894; 
+    }
+    
+    .logoImage {
+        height: 1.95em;
+        width: 5em;
+        margin-top: -20px;
+    }
+}
+
+@media (min-width: 801px) {
+    .logoName {
+        font-size: 8em;
+        text-decoration: none;
+        color: #ace894; 
+    }
+
+    .logoImage {
+        height: 4.5em;
+        width: 12em;
+        margin-top:-56px;
+    }
+}
+
+
+
+html, body {
+    height: 100%;
+    background-color: #0E0F19;
+    color: #ace894;
+    /*color: #20BF55;*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: 'Raleway';
+}
+
+section {
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    height: 100vh;
+}
+
+a:hover {
+    color: #ace894;
+    text-decoration: none;
+}
+
+.landing-container {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content {
+    text-align: center;
+    display: inline-block;
+}
+
+.title {
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+
+.navbar {
+    padding-right: 2%;
+    padding-top: 1%;
+    font-size: 1.5em;
+}
+
+.nav>li>a {
+    color: lightgrey;
+}
+
+.nav>li>#sign {
+    color: #ace894;
+}
+
+.nav>li>a:hover, .nav>li>#sign:hover {
+    background-color: #ace894;
+    color: #000;
+}
+
+.nav>li>a:focus, .nav>li>#sign:focus {
+    color: #57886C;
+    background-color: #81A684;
+}
+
+.greenArrow {
+    color: #ace894; 
+    font-size: 3em;
+    height: 100vh;
+}
+
+#landing {
+    position: relative; 
+}
+
+#greenArrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -1.5625em; 
+}
