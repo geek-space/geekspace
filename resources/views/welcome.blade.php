@@ -6,6 +6,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>geekspace</title>
+        <script src="https://use.fontawesome.com/6a0219d677.js"></script>
+        <link rel="shortcut icon" href="/img/gs.png" type="image/x-icon">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">        
         <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -64,20 +66,24 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title text-center">Log In</h4>
+                    <h2 class="modal-title text-center">Log In</h2>
                 </div>
                 <div class="modal-body">
                     <form  method="POST" action=""> 
                         {!! csrf_field() !!}
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <input class="form-control" type="email" name="email" placeholder="Email">
-                                <input class="form-control" type="password" name="password" placeholder="Password">
+                                <div class="col-xs-12">
+                                    <input class="form-control form-group" type="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="col-xs-12">
+                                    <input class="form-control form-group" type="password" name="password" placeholder="Password">
+                                </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-success pull-left" type="submit">Login</button>
-                            <a href="#signup" data-toggle="modal" data-dismiss="modal" class="btn btn-default btn-danger">Go To Signup</a>
+                            <button class="btn pull-left modalBtns" type="submit">Log In</button>
+                            <p>Not a member yet? <a href="#signup" data-toggle="modal" data-dismiss="modal">Sign Up</a></p>
                         </div>
                     </form>
                 </div><!-- modal-body -->
@@ -93,23 +99,33 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title text-center">Sign Up</h4>
+                    <h2 class="modal-title text-center">Sign Up</h2>
                 </div>
                 <div class="modal-body">
                     <form  method="POST" action=""> 
                         {!! csrf_field() !!}
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <input class="form-control" type="text" name="first_name" placeholder="First Name">
-                                <input class="form-control" type="text" name="last_name" placeholder="Last Name">
-                                <input class="form-control" type="email" name="email" placeholder="Email">
-                                <input class="form-control" type="password" name="password" placeholder="Create Password">
-                                <input class="form-control" type="password" name="password_confirm" placeholder="Confirm Password">
+                                <div class="col-xs-6">
+                                    <input class="form-control form-group" type="text" name="first_name" placeholder="First Name">
+                                </div>
+                                <div class="col-xs-6">
+                                    <input class="form-control form-group" type="text" name="last_name" placeholder="Last Name">
+                                </div>
+                                <div class="col-xs-12">
+                                    <input class="form-control form-group" type="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="col-xs-12">
+                                    <input class="form-control form-group" type="password" name="password" placeholder="Create Password">
+                                </div>
+                                <div class="col-xs-12">
+                                    <input class="form-control form-group" type="password" name="password_confirm" placeholder="Confirm Password">
+                                </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-success pull-left" type="submit">Signup</button>
-                            <a href="#login" data-toggle="modal" data-dismiss="modal" class="btn btn-default btn-danger">Go To Login</a>
+                            <button class="btn pull-left modalBtns" type="submit">Sign Up</button>
+                            <p>Already a member? <a href="#login" data-toggle="modal" data-dismiss="modal">Log In</a></p> 
                         </div>
                     </form>
                 </div><!-- modal-body -->
@@ -124,7 +140,5 @@
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
     <!-- BOOTSTRAP -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- FONT-AWESOME -->
-    <script src="https://use.fontawesome.com/6a0219d677.js"></script>
     </body>
 </html>
