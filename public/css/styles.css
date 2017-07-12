@@ -1,50 +1,17 @@
-.logoName {
-    font-size: 2.5em;
+/************* LANDING PAGE STYLES *************/
+
+a:focus, .btn:focus {
+    outline: 0;
     text-decoration: none;
-    color: #ace894; 
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
-
-.logoImage {
-    height: 1.5em;
-    width: 4em;
-    margin-top: -14px;
-}
-
-@media (min-width: 321px) {
-    .logoName {
-        font-size: 3.5em;
-        text-decoration: none;
-        color: #ace894; 
-    }
-    
-    .logoImage {
-        height: 1.95em;
-        width: 5em;
-        margin-top: -20px;
-    }
-}
-
-@media (min-width: 801px) {
-    .logoName {
-        font-size: 8em;
-        text-decoration: none;
-        color: #ace894; 
-    }
-
-    .logoImage {
-        height: 4.5em;
-        width: 12em;
-        margin-top:-56px;
-    }
-}
-
-
 
 html, body {
     height: 100%;
     background-color: #0E0F19;
     color: #ace894;
-    /*color: #20BF55;*/
 }
 
 body {
@@ -86,30 +53,6 @@ a:hover {
     font-family: 'Raleway';
 }
 
-.navbar {
-    padding-right: 2%;
-    padding-top: 1%;
-    font-size: 1.5em;
-}
-
-.nav>li>a {
-    color: lightgrey;
-}
-
-.nav>li>#sign {
-    color: #ace894;
-}
-
-.nav>li>a:hover, .nav>li>#sign:hover {
-    background-color: #ace894;
-    color: #000;
-}
-
-.nav>li>a:focus, .nav>li>#sign:focus {
-    color: #57886C;
-    background-color: #81A684;
-}
-
 .greenArrow {
     color: #ace894; 
     font-size: 3em;
@@ -126,3 +69,139 @@ a:hover {
     left: 50%;
     margin-left: -1.5625em; 
 }
+
+/************* Landing Page LOGO Styles *************/
+.logoName {
+    font-size: 2.5em;
+    text-decoration: none;
+    color: #ace894; 
+}
+
+.logoImage {
+    height: 1.5em;
+    width: 4em;
+    margin-top: -14px;
+}
+
+@media (min-width: 321px) {
+    .logoName {
+        font-size: 3.5em; 
+    }
+    
+    .logoImage {
+        height: 1.95em;
+        width: 5em;
+        margin-top: -20px;
+    }
+}
+
+@media (min-width: 801px) {
+    .logoName {
+        font-size: 8em; 
+    }
+
+    .logoImage {
+        height: 4.5em;
+        width: 12em;
+        margin-top:-56px;
+    }
+}
+/*********** End of Landing Page Logo Styles ***********/
+
+
+/************* Landing Page NAVBAR Styles *************/
+@media (max-width: 767px) {
+    .navbar-right>li {
+        width: 100%;
+        text-align: center;
+        border-bottom: none;
+    }
+}
+
+.navbar {
+    padding-right: 2%;
+    padding-top: 1%;
+    font-size: 1.5em;
+}
+
+.nav>li>a {
+    color: lightgrey;
+}
+
+.nav>li>#sign {
+    color: #ace894;
+}
+
+.nav>li>a:hover, .nav>li>#sign:hover, .nav>li>a:focus, .nav>li>#sign:focus {
+    color: #81A684;
+    background-color: transparent;
+}
+/************* End of Landing Page Navbar Styles *************/
+
+
+/************* Landing Page LOGIN/SIGNUP MODAL Styles *************/
+@media (min-width: 1200px) {
+/*centers login/signup modals on devices over 1200px*/
+    .modal {
+        max-height: calc(100% - 100px);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.modalBtns {
+    background-color: #ace894;
+    color: #000;
+}
+
+.modalBtns:focus, .modalBtns:hover {
+    background-color: #81A684;
+}
+
+.modal-footer>p>a {
+    color: #81A684;
+    text-decoration: underline;
+}
+
+.modal-footer>p>a:hover{
+    color: #ace894;
+}
+
+.modal-header, .modal-content {
+    background-color: #333;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.form-control {
+    background-color: #222;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-content {
+    opacity: .98;
+}
+
+.form-control {
+    border:none;
+    color: #ace894;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus, textarea.form-control:focus {
+    outline: 0;
+    background: #111;
+    color: #ace894;
+    -moz-box-shadow: 1px 1px 10px #ace894;
+    -webkit-box-shadow: 1px 1px 10px #ace894;
+    box-shadow: 1px 1px 10px #ace894;
+}
+/************* End of Landing Page Login/Signup Modal Styles *************/
+
+/************* END OF LANDING PAGE STYLES *************/
