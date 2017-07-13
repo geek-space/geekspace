@@ -1,0 +1,84 @@
+.navbar-logo {
+    padding: 5px 10px;
+}
+
+.navbar-header>a {
+    color: #ace894;
+}
+
+.navbar-header>a:hover {
+    color: #ace894;
+    text-decoration: none;
+}
+
+.navbar-logoName {
+    font-size: 2.5em;
+    font-family: 'Raleway';"
+}
+
+#kspace {
+    letter-spacing: 4px;
+}
+
+.navbar-logoImg {
+    width: 54px;
+    height: 20px;
+    margin-top: -11px;
+}
+
+.userIcon {
+    font-size: 2em;
+}
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    margin-top: 20px;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-wrapper .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-content {
+    width:320px;
+    padding: 15px;
+    padding-bottom:0px;
+}
+
+.navbar-content:before, .navbar-content:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 15px !important;
+}
+
+.navbar-footer {
+    background-color:#DDD;
+}
+
+.navbar-footer-content { 
+    padding:15px 15px 15px 15px; 
+}
+
+.dropdown-menu {
+    padding: 0px;
+    overflow: hidden;
+}
+@media (max-width: 767px) {
+    .nav>.userAccount {
+        display: none;
+    }
+}
