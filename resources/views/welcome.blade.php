@@ -106,11 +106,8 @@
                         {!! csrf_field() !!}
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <div class="col-xs-6">
-                                    <input class="form-control form-group" type="text" name="first_name" placeholder="First Name">
-                                </div>
-                                <div class="col-xs-6">
-                                    <input class="form-control form-group" type="text" name="last_name" placeholder="Last Name">
+                                <div class="col-xs-12">
+                                    <input class="form-control form-group" type="text" name="name" placeholder="Full Name">
                                 </div>
                                 <div class="col-xs-12">
                                     <input class="form-control form-group" type="email" name="email" placeholder="Email">
