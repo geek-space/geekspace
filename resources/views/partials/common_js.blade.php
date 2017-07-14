@@ -6,6 +6,8 @@
 <script>
 (function() {
     "use strict";
-    
+
+    $('body').fadeIn(500);
+
 })();
 </script>

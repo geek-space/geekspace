@@ -1,5 +1,10 @@
+/************* NAVBAR Styles *************/
 .navbar-logo {
     padding: 5px 10px;
+}
+
+.nav>li {
+    text-align: center;
 }
 
 .navbar-header>a {
@@ -39,11 +44,11 @@
     margin-top: 20px;
 }
 
-/* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper .container {
     padding-left: 0;
     padding-right: 0;
 }
+
 .navbar-wrapper .navbar {
     padding-left: 15px;
     padding-right: 15px;
@@ -59,6 +64,10 @@
     display: table;
     content: "";
     line-height: 0;
+}
+
+.navbar-toggle {
+    color: #ace894;
 }
 
 .navbar-nav.navbar-right:last-child {
@@ -77,8 +86,65 @@
     padding: 0px;
     overflow: hidden;
 }
+
 @media (max-width: 767px) {
     .nav>.userAccount {
         display: none;
     }
+}
+/************* End of NAVBAR Styles *************/
+
+
+/************* Homepage Styles *************/
+body {
+    background-color: #E6ECF0;
+    display: none;
+}
+
+aside{
+    margin-top: 5%;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.posts {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.posts>a>article {
+    border-bottom: 1px solid lightgrey;
+}
+
+.posts>a {
+    color: black;
+    text-decoration: none;
+}
+
+.posts>a:hover>article {
+    background-color: #FAFAFA;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    clear: both;
+}
+
+.footer {
+    padding-top: 1em;
+}
+
+.socialMedia>a, .footer-links>a {
+    font-size: 1.25em;
+    padding: 2%;
+    color: #ace894;
+}
+
+.copyright {
+    color: #FAFAFA;
+    font-size: 1em;
 }
