@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>geekspace</title>
         <script src="https://use.fontawesome.com/6a0219d677.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
         <link rel="shortcut icon" href="/img/gs.png" type="image/x-icon">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">        
@@ -33,7 +34,7 @@
         <section id="landing">
             <div class="landing-container">
                 <div class="content">
-                    <div class="title">
+                    <div class="title geekspace">
                         <a class="logoName">g</a>
                         <a><img class="logoImage" src="img/green-nerdy-glasses.png" onContextMenu="return false;"></a>
                         <a class="logoName">kspace</a>
@@ -137,5 +138,18 @@
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
     <!-- BOOTSTRAP -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('body').fadeIn(1000);
+    
+            setInterval(function(){
+                $("#greenArrow").toggleClass("animated bounce");
+            }, 10000);
+
+            setTimeout(function(){
+                $(".geekspace").toggleClass("animated rubberBand");
+            }, 1500);
+        });
+    </script>
     </body>
 </html>
