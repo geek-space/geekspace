@@ -21,6 +21,7 @@ body {
     display: table;
     font-weight: 100;
     font-family: 'Raleway';
+    display: none;
 }
 
 section {
@@ -68,6 +69,16 @@ a:hover {
     bottom: 5%;
     left: 50%;
     margin-left: -1.5625em; 
+}
+
+.joinBtn {
+    background-color: #ace894;
+    color:#000;
+    text-transform: uppercase;
+}
+
+.joinBtn:hover, .joinBtn:focus {
+    background-color: #81A684;
 }
 
 /************* Landing Page LOGO Styles *************/

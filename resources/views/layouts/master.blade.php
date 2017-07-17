@@ -11,6 +11,9 @@
     <!-- PAGE CONTENT -->
     @yield('content')
     
+    <!-- FOOTER -->
+    @include('partials.footer')
+
     <!-- JS SCRIPTS -->  
     @include('partials.common_js')
 </body>

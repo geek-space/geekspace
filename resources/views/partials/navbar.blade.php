@@ -1,4 +1,5 @@
 <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
     <!-- Left-Side of Navbar (Logo) -->
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -21,7 +22,7 @@
             <!-- User Account Dropdown (doesn't appear on mobile) -->
             <li class="dropdown userAccount">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="fa fa-user-circle-o userIcon" aria-hidden="true"></i>
+                    <i class="fa fa-user-circle-o userIcon" aria-hidden="true"></i><i class="caret"></i>
                 </a>
                 <ul class="dropdown-menu">
                     <li>
@@ -57,4 +58,5 @@
             <!-- End of User Account Dropdown -->
         </ul>
     </div>
+</div>
 </nav>
