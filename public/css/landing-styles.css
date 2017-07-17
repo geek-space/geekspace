@@ -71,6 +71,16 @@ a:hover {
     margin-left: -1.5625em; 
 }
 
+.joinBtn {
+    background-color: #ace894;
+    color:#000;
+    text-transform: uppercase;
+}
+
+.joinBtn:hover, .joinBtn:focus {
+    background-color: #81A684;
+}
+
 /************* Landing Page LOGO Styles *************/
 .logoName {
     font-size: 2.5em;

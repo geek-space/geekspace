@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>geekspace</title>
+        <title>Welcome to Geekspace! - A Community for Developers</title>
         <script src="https://use.fontawesome.com/6a0219d677.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
         <link rel="shortcut icon" href="/img/gs.png" type="image/x-icon">
@@ -52,6 +52,7 @@
                 <div class="content">
                     <div class="title">
                         <h1>Summary of Us</h1>
+                        <a href="#signup" data-toggle="modal" class="btn btn-xl joinBtn">Join the community</a>
                     </div>
                 </div>
             </div>
@@ -59,97 +60,101 @@
         
 
 
+        <!-- LOGIN/SIGNUP MODALS -->
 
-
-<!-- Login Modal -->
-    <div id="login" class="modal fade loginModal" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h2 class="modal-title text-center">Log In</h2>
-                </div>
-                <div class="modal-body">
-                    <form  method="POST" action=""> 
-                        {!! csrf_field() !!}
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <div class="col-xs-12">
-                                    <input class="form-control form-group" type="email" name="email" placeholder="Email">
-                                </div>
-                                <div class="col-xs-12">
-                                    <input class="form-control form-group" type="password" name="password" placeholder="Password">
-                                </div>
-                            </div>
+            <!-- Login Modal -->
+            <div id="login" class="modal fade loginModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title text-center">Log In</h2>
                         </div>
-                        <div class="modal-footer">
-                            <button class="btn pull-left modalBtns" type="submit">Log In</button>
-                            <p>Not a member yet? <a href="#signup" data-toggle="modal" data-dismiss="modal">Sign Up</a></p>
+                        <div class="modal-body">
+                            <form  method="POST" action=""> 
+                                {!! csrf_field() !!}
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <div class="col-xs-12">
+                                            <input class="form-control form-group" type="email" name="email" placeholder="Email">
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <input class="form-control form-group" type="password" name="password" placeholder="Password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn pull-left modalBtns" type="submit">Log In</button>
+                                    <p>Not a member yet? <a href="#signup" data-toggle="modal" data-dismiss="modal">Sign Up</a></p>
+                                </div>
+                            </form>
+                        </div><!-- modal-body -->
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+
+
+            <!-- Signup Modal -->
+            <div id="signup" class="modal fade signupModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title text-center">Sign Up</h2>
                         </div>
-                    </form>
-                </div><!-- modal-body -->
-            </div><!-- modal-content -->
-        </div><!-- modal-dialog -->
-    </div><!-- modal -->
-
-
-
-    <!-- Signup Modal -->
-    <div id="signup" class="modal fade signupModal" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h2 class="modal-title text-center">Sign Up</h2>
-                </div>
-                <div class="modal-body">
-                    <form  method="POST" action=""> 
-                        {!! csrf_field() !!}
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <div class="col-xs-12">
-                                    <input class="form-control form-group" type="text" name="name" placeholder="Full Name">
+                        <div class="modal-body">
+                            <form  method="POST" action=""> 
+                                {!! csrf_field() !!}
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <div class="col-xs-12">
+                                            <input class="form-control form-group" type="text" name="name" placeholder="Full Name">
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <input class="form-control form-group" type="email" name="email" placeholder="Email">
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <input class="form-control form-group" type="password" name="password" placeholder="Create Password">
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <input class="form-control form-group" type="password" name="password_confirm" placeholder="Confirm Password">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-xs-12">
-                                    <input class="form-control form-group" type="email" name="email" placeholder="Email">
+                                <div class="modal-footer">
+                                    <button class="btn pull-left modalBtns" type="submit">Sign Up</button>
+                                    <p>Already a member? <a href="#login" data-toggle="modal" data-dismiss="modal">Log In</a></p> 
                                 </div>
-                                <div class="col-xs-12">
-                                    <input class="form-control form-group" type="password" name="password" placeholder="Create Password">
-                                </div>
-                                <div class="col-xs-12">
-                                    <input class="form-control form-group" type="password" name="password_confirm" placeholder="Confirm Password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn pull-left modalBtns" type="submit">Sign Up</button>
-                            <p>Already a member? <a href="#login" data-toggle="modal" data-dismiss="modal">Log In</a></p> 
-                        </div>
-                    </form>
-                </div><!-- modal-body -->
-            </div><!-- modal-content -->
-        </div><!-- modal-dialog -->
-    </div><!-- modal -->
+                            </form>
+                        </div><!-- modal-body -->
+                    </div><!-- modal-content -->
+                </div><!-- modal-dialog -->
+            </div><!-- modal -->
+        <!-- LOGIN/SIGNUP MODALS -->
 
 
+        <!-- JQUERY -->
+        <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <!-- BOOTSTRAP -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- CUSTOM JS -->
+        <script type="text/javascript">
+            (function() {
+                "use strict";
 
+                $('body').fadeIn(1000);
 
-    <!-- JQUERY -->
-    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <!-- BOOTSTRAP -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('body').fadeIn(1000);
-    
-            setInterval(function(){
-                $("#greenArrow").toggleClass("animated bounce");
-            }, 10000);
+                setTimeout(function(){
+                    $("#greenArrow").toggleClass("animated bounce");
+                    setInterval(function(){
+                        $("#greenArrow").toggleClass("animated bounce");
+                    }, 3000);
+                }, 7000);
 
-            setTimeout(function(){
-                $(".geekspace").toggleClass("animated rubberBand");
-            }, 1500);
-        });
-    </script>
+                setTimeout(function(){
+                    $(".geekspace").toggleClass("animated rubberBand");
+                }, 1500);
+            })();
+        </script>
     </body>
 </html>
