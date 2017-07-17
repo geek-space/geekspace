@@ -12,7 +12,7 @@
                 <a href="#"><i class="fa fa-instagram"></i></a>
             </div>
             <div class="col-md-12 footer copyright">
-                <p>&copy; 2017 geekspace</p>
+                <p>Geekspace &copy; 2017</p>
             </div>
         </div>
     </div>

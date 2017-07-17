@@ -97,26 +97,40 @@
 
 /************* Homepage Styles *************/
 body {
-    background-color: #E6ECF0;
+    background-color: #FAFAFA;
     display: none;
 }
 
-aside{
+.sidebar {
+    margin-top: 4%;
+}
+
+.createPost {
     margin-top: 5%;
+    border: 1px solid lightgrey;
+    padding-bottom: 50px;
+}
+
+.createPostDesc {
+    resize: none;
+}
+
+.createPostBtn {
+    width: 80px;
+}
+
+.posts {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    /*gives scroll effect for posts*/
+    /*overflow-y: auto;
+    height: 1000px;*/
 }
 
 article {
     background-color: #fff;
     padding: 20px;
-}
-
-.posts {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.posts>a>article {
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey; 
 }
 
 .posts>a {
@@ -125,7 +139,7 @@ article {
 }
 
 .posts>a:hover>article {
-    background-color: #FAFAFA;
+    background-color: #EEE;
     text-decoration: none;
 }
 
